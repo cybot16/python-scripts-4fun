@@ -3,13 +3,13 @@ from email.mime.text import MIMEText
 
 smtp_ssl_host = 'smtp.gmail.com'  # smtp.mail.yahoo.com
 smtp_ssl_port = 465
-username = 'haloba.halob'
-password = 'azertyuiop123456789'
-sender = 'haloba.halob@gmail.com'
-targets = ['abdellah.sabry@gmail.com']
+username = 'user.name'
+password = 'password'
+sender = 'user.name@gmail.com'
+targets = ['my.email@gmail.com']
 
-msg = MIMEText('ALERT IN POWER STATION!!!')
-msg['Subject'] = 'TRAP!'
+msg = MIMEText('This is the mail content')
+msg['Subject'] = 'This is the mail subject'
 msg['From'] = sender
 msg['To'] = ', '.join(targets)
 try:
